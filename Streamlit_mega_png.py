@@ -115,4 +115,4 @@ with col_main:
         st.image(img, use_container_width=True, caption=f"PRS Tier Results: 0-{cut1}% | {cut1}-{cut2}% | {cut2}-100%")
         #st.info(f"Viewing File: `{png_files[selected_cuts]}`")
     else:
-        st.warning(f"No generated PNG available for this specific configuration. (Expected filename: `Animated_MA2026_{cut1}_{cut2}.png`)")
+        st.warning(f"No figure available for this specific configuration.")
