@@ -10,7 +10,7 @@ from PIL import Image
 st.set_page_config(layout="wide")
 
 # Directory containing your PNG plots
-png_dir = "../Figures/PNG/Animated"
+png_dir = "./Figures/PNG/Animated"
 
 if not os.path.exists(png_dir):
     st.error(f"PNG directory not found: {png_dir}")
@@ -113,6 +113,6 @@ with col_main:
         
         img = Image.open(target_png)
         st.image(img, use_container_width=True, caption=f"PRS Tier Results: 0-{cut1}% | {cut1}-{cut2}% | {cut2}-100%")
-        st.info(f"Viewing File: `{png_files[selected_cuts]}`")
+        #st.info(f"Viewing File: `{png_files[selected_cuts]}`")
     else:
         st.warning(f"No generated PNG available for this specific configuration. (Expected filename: `Animated_MA2026_{cut1}_{cut2}.png`)")
