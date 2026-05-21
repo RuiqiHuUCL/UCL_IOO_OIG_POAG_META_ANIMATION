@@ -49,7 +49,7 @@ with col_main:
     # ------------------------------------------
     # HEADER SECTION
     # ------------------------------------------
-    st.header("Interactive Supplementary Figure 11")
+    st.header("Interactive Supplementary Figure 12")
     st.subheader("PRS Three-Tier Stratification Dashboard")
     st.markdown("---")
 
